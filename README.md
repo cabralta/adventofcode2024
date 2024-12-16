@@ -28,5 +28,6 @@ Gold Star, Silver Star
 * Added timer to utils to see how long it takes to run.
 * Need to look more at `_` in return values - seems to be a black hole, but also you miss out on bubbling errors?
 * GitHub learning, need to make main branch and use that for pull requests.
+* Need to add more tests
 
 ### Day 3
