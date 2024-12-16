@@ -27,5 +27,6 @@ Gold Star, Silver Star
 * Some testing can be done but current code takes less than a second to run even though there is seemingly inefficient looping going on. Current performance doesn't seem worth changing approach given readability and simplicity of functions.
 * Added timer to utils to see how long it takes to run.
 * Need to look more at `_` in return values - seems to be a black hole, but also you miss out on bubbling errors?
+* GitHub learning, need to make main branch and use that for pull requests.
 
 ### Day 3
