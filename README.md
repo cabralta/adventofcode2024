@@ -3,7 +3,9 @@
 https://adventofcode.com/2024/
 
 ## Learnings
-### Day 1 
+### Day 1
+
+Gold Star, Silver Star
 
 * Golang doesn't have absolute function for other types included in the standard libs. float64 is the only supported type, which requires creation of a function to turn negative values positive. 
 * Assignment with `:=` and `=` is becoming clearer but need to solidify use cases for better memory of which to use.
@@ -15,6 +17,8 @@ https://adventofcode.com/2024/
 * Need to see more patterns and understand for looping with ranges better.
 
 ### Day 2
+
+Gold Star, Silver Star
 
 * More work with modules, beginning to understand utilization more with creation and movement of utils function. Use of `adventofcode.com/2024/utils=../utils` to define module name and local path was helpful to reference. 
 * Use of command line tools helpful
