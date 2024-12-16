@@ -15,3 +15,13 @@ https://adventofcode.com/2024/
 * Need to see more patterns and understand for looping with ranges better.
 
 ### Day 2
+
+* More work with modules, beginning to understand utilization more with creation and movement of utils function. Use of `adventofcode.com/2024/utils=../utils` to define module name and local path was helpful to reference. 
+* Use of command line tools helpful
+* slog is structured logging, doesn't allow formatted lines and prefers variables in k-v pairs. This is helpful for parsing, more to get used to here, but I like it as it manageable logging. 
+* Slice append and copy are all pointers - they will update original even through iterations, discovered this with some difficulty.
+* Some testing can be done but current code takes less than a second to run even though there is seemingly inefficient looping going on. Current performance doesn't seem worth changing approach given readability and simplicity of functions.
+* Added timer to utils to see how long it takes to run.
+* Need to look more at `_` in return values - seems to be a black hole, but also you miss out on bubbling errors?
+
+### Day 3
