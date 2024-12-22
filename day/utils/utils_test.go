@@ -12,8 +12,8 @@ func TestAbs(t *testing.T) {
 		input1 int
 		want   int
 	}{
-		{"Value should be positive", 10, 10},
-		{"Distance should be 10", -10, 10},
+		{"Positive Value", 10, 10},
+		{"Negative Value", -10, 10},
 	}
 
 	for _, tt := range tests {
