@@ -31,3 +31,7 @@ Gold Star, Silver Star
 * Need to add more tests `go test utils.go utils_test.go -v`
 
 ### Day 3
+* understanding ranges better and use of `_`
+* regular expressions were straight forward
+* breaking things into functions in a way where the second puzzle doesn't require refactoring is challenging
+* CLI makes it easier to switch parameters but harder to debug, testing may resolve this.
