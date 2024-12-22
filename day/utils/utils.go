@@ -17,6 +17,52 @@ func Abs(Integer int) int {
 	return Integer
 }
 
+func StringsToInts(Input []string) []int {
+
+	Ints := make([]int, 0)
+	for _, StringToConvert := range Input {
+		Int, _ := strconv.Atoi(StringToConvert)
+		Ints = append(Ints, Int)
+	}
+
+	return Ints
+}
+
+
+func GetProductOfInts(IntArr []int) int {
+
+	Product := 0
+
+	for Idx, Int := range IntArr {
+
+		if Idx == 0 {
+			Product = Int
+		} else {
+			Product = Product * Int
+		}
+
+	}
+
+	return Product
+}
+
+func ReadFileIntoString(Path string) []string {
+	FileContents := make([]string, 0)
+	file, err := os.Open(Path)
+	if err != nil {
+		slog.Error("Error opening file.", Path, slog.Any("error", err))
+		panic(err)
+	}
+	defer file.Close()
+	Scanner := bufio.NewScanner(file)
+	for Scanner.Scan() {
+		FileContents = append(FileContents, Scanner.Text())
+
+	}
+
+	return FileContents
+}
+
 func ReadFileIntoIntMatrix(Path string) [][]int {
 
 	IntMatrix := make([][]int, 0)
