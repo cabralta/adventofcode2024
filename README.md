@@ -5,7 +5,7 @@ https://adventofcode.com/2024/
 ## Learnings
 ### Day 1
 
-Gold Star, Silver Star
+Gold Star
 
 * Golang doesn't have absolute function for other types included in the standard libs. float64 is the only supported type, which requires creation of a function to turn negative values positive. 
 * Assignment with `:=` and `=` is becoming clearer but need to solidify use cases for better memory of which to use.
@@ -18,7 +18,7 @@ Gold Star, Silver Star
 
 ### Day 2
 
-Gold Star, Silver Star
+Gold Star
 
 * More work with modules, beginning to understand utilization more with creation and movement of utils function. Use of `adventofcode.com/2024/utils=../utils` to define module name and local path was helpful to reference. 
 * Use of command line tools helpful
@@ -31,7 +31,12 @@ Gold Star, Silver Star
 * Need to add more tests `go test utils.go utils_test.go -v`
 
 ### Day 3
+
+Gold Star
+
 * understanding ranges better and use of `_`
-* regular expressions were straight forward
+* regular expressions were straight forward, however wasnt able to leverage `\d` as shorthand for `[0-9]`
 * breaking things into functions in a way where the second puzzle doesn't require refactoring is challenging
 * CLI makes it easier to switch parameters but harder to debug, testing may resolve this.
+
+### Day 4 
