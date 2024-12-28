@@ -142,8 +142,8 @@ func TestReadFileIntoIntMatrix(t *testing.T) {
 		ExpectPanic  bool
 		Want         [][]int
 	}{
-		{"Clean Conversion", "test_read_file_into_int_matrix_file", []byte("1 2\n3 4\n5 6"), false, [][]int{{1, 2}, {3, 4}, {5, 6}}},
-		{"Panic Conversion", "test_read_file_into_int_matrix_file", []byte("1 2\n3 4\n5 T"), true, [][]int{{1, 2}, {3, 4}, {5, 0}}},
+		{"Test Read File Into Int Matrix Clean Conversion", "test_read_file_into_int_matrix_file", []byte("1 2\n3 4\n5 6"), false, [][]int{{1, 2}, {3, 4}, {5, 6}}},
+		{"Test Read File Into Int Matrix Panic Conversion", "test_read_file_into_int_matrix_file", []byte("1 2\n3 4\n5 T"), true, [][]int{{1, 2}, {3, 4}, {5, 0}}},
 	}
 
 	for _, tt := range tests {
@@ -153,7 +153,7 @@ func TestReadFileIntoIntMatrix(t *testing.T) {
 			panic(err)
 		}
 
-		t.Run("Validate File Read Returns Slice of Slice with the same values", func(t *testing.T) {
+		t.Run(tt.name, func(t *testing.T) {
 
 			defer func() { recover() }()
 			ans := ReadFileIntoIntMatrix(tt.TestFilePath)
