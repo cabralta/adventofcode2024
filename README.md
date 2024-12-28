@@ -40,3 +40,19 @@ Gold Star
 * CLI makes it easier to switch parameters but harder to debug, testing may resolve this.
 
 ### Day 4 
+
+* Invested time in building testing for utilities functions. 
+* Testing doesn't have assert functions; however, there are packages that can be imported to provide that fuctionality.
+* Need to learn more about `defer()` and `recover()` functions. 
+* Learned that `defer()` needs to be proximally close to calls we are making to apply correctly, related to capturing panics.
+* Added return value to `TrackTime()` to test rather than looking for std out or structured log validation.
+* Reading about `slogtest` it only validates structure of log and not any particular values.
+* Experimented with coverage commands. Shown below.  
+* Achieved 100% coverage
+
+Coverage commands
+```
+go test utils.go utils_test.go  -coverprofile=reports/cover.out -cover -v
+go tool cover -html=reports/cover.out -o reports/coverage_report.html
+open reports/coverage_report.html
+```
