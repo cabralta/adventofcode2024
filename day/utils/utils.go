@@ -28,7 +28,6 @@ func StringsToInts(Input []string) []int {
 	return Ints
 }
 
-
 func GetProductOfInts(IntArr []int) int {
 
 	Product := 0
@@ -102,7 +101,9 @@ func RemoveItemFromSlice(Slice []int, S int) []int {
 	return append(NewSlice, Slice[S+1:]...)
 }
 
-func TimeTrack(Start time.Time, MethodName string) {
+func TimeTrack(Start time.Time, MethodName string) time.Duration {
 	Elapsed := time.Since(Start)
 	slog.Info("Execution duration", MethodName, Elapsed)
+
+	return Elapsed
 }
